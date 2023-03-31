@@ -13,6 +13,7 @@ export default function ContactForm() {
   };
 
   return (
+    <div className={styles.formContainer}>
     <form className={styles.formu} onSubmit={handleSubmit}>
       <div className={styles.previousElement}></div>
       <h1 className={styles.titulo}>Contactanos</h1>
@@ -36,5 +37,6 @@ export default function ContactForm() {
         Enviar
       </button>
     </form>
+    </div>
   );
 }

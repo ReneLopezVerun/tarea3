@@ -22,17 +22,19 @@
 .card {
   border-radius: 50px;
   border: 1px solid #989898;
-  width: 300px;
+  width: 400px;
   height: 400px;
   margin: 10px;
-  padding: 20px;
+  padding: 23px;
 }
 
 .card h2 {
-  margin-top: 0;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .card img {
+  margin-top: 33px;
   width: 100%;
   height: 73px;
   margin-bottom: 50px;
@@ -43,15 +45,19 @@
   display: flex;
 }
 
+.formContainer {
+  background-image: url("/vista-aerea-equipo-empresarial1.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  flex-basis: 70%;
+}
 
 /* estilos para el formulario */
 .formu{
   /* ... */
-  background-image: url("/vista-aerea-equipo-empresarial1.svg");
   background-size: cover;
   background-position: center;
-  padding: 1rem;
-  flex-basis: 70%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -151,6 +157,96 @@
   font-size: 1rem;
 }
 
-
-
-
+@media screen and (max-width: 767px) {
+  /* Estilos para el contenedor */
+  .container {
+  height: auto;
+  }
+  
+  /* Estilos para las tarjetas */
+  .cards {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  .card {
+  width: 90%;
+  height: auto;
+  margin: 10px 0;
+  padding: 20px;
+  }
+  
+  .card img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  
+  /* Estilos para el formulario */
+  .titulo{
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  }
+  
+  .entradas[type='text']{
+  width: 90%;
+  height: 150px;
+  margin-bottom: 1rem;
+  }
+  
+  .entradas[type='email'] {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 1rem;
+  }
+  
+  .buton[type='submit'] {
+  width: 80%;
+  height: 60px;
+  margin-bottom: 2rem;
+  margin-left: 10%;
+  align-self: center;
+  }
+  
+  .buton:hover{
+  background: #00529B;
+  border: 1px solid white;
+  color: white;
+  }
+  
+  /* Estilos para el container2 y formContainer */
+  .container2{
+  flex-direction: column;
+  }
+  
+  .formContainer {
+  flex-basis: auto;
+  height: auto;
+  }
+  
+  /* Estilos para containerInfo */
+  .containerInfo {
+  flex-basis: auto;
+  height: auto;
+  }
+  
+  .contactSection {
+  flex-direction: column;
+  margin-top: 1rem;
+  }
+  
+  .image {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  }
+  
+  .info {
+  text-align: center;
+  }
+  
+  .subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  }
+  }
