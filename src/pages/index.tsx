@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
-import Servicios from '../components/Servicios';
-import ContactForm from '../components/ContactForm';
-import ContactInfo from '../components/ContactInfo';
+import Servicios from '../components/services/Servicios';
+import ContactForm from '../components/form/ContactForm';
+import ContactInfo from '../components/info/ContactInfo';
 
 function Index() {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from '../styles/Home.module.css';
-
+import styles from '../info/ContactInfo.module.css'
 const ContactInfo = () => {
   return (
     <div className={styles.containerInfo}>
